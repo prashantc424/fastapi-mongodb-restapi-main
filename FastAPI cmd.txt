@@ -1,0 +1,7 @@
+python -m venv virtual
+source virtual/scripts/activate
+pip install pymongo fastapi uvicorn
+pip install fastapi sqlalchemy pymysql uvicorn
+touch index.py
+uvicorn index:app --reload
+
